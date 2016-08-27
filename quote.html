@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>All Seasons Garden Care</title>
+<link href="main.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+
+  form {
+    padding-left: 50px;
+    padding-bottom: 50px;
+  }
+
+  input {
+    font-size: 14px;
+    color: #1d5943;
+  }
+
+  #content label {
+  font-weight: bold;
+  font-size: 16px;
+  }
+  
+
+  #content select {
+    color: #1d5943;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  #field_address {
+    width: 250px;
+    height: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  #field_firstName, #field_lastName, #field_phoneNum, 
+  #field_cellNum, #field_workNum, #field_email {
+    height: 20px;
+    width: 150px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+</style>
+</head>
+
+
+<body>
+  <div id="container">
+  <div id="header">
+    <!-- end #header --></div>
+
+  <div id="MainNav"> 
+  <ul>
+    <li><a href="index.html">Home</a>    </li>
+    <li><a href="photo-gallery.html">Photo Gallery</a></li>
+    <li><a href="quote.html">Get A Quote</a></li>
+    <li><a href="about-us.html">About Us</a>    </li>
+    <li><a href="contact-us.html">Contact Us</a></li>
+  </ul>
+  </div> 
+
+  <br />
+
+  <div id="content">
+    <div class="jumbotron">
+      <h1>Get A Quote</h1>
+    </div>
+
+      <form name="quote-form" action="send-mail.php" method="post">
+        <label for="field_firstName">First Name:</label>
+        <br>
+        <input type="text" id="field_firstName" name="sender_firstName"/>
+        <br>
+        <br>
+        <label for="field_lastName">Last Name:</label>
+        <br>
+        <input type="text" id="field_lastName" name="sender_lastName"/>
+        <br />
+        <br />
+        <label for="field_address">Property Address:</label>
+        <br />
+        <input type="text" id="field_address" name="sender_address"/>
+        <br />
+        <br />
+        <label for="field_phoneNum">Phone:</label>
+        <br />
+        <input type="text" id="field_phoneNum" name="sender_telephoneNum"/>
+        <br />
+        <br />
+        <label for="field_cellNum">Cell Phone:</label>
+        <br />
+        <input type="text" id="field_cellNum" name="sender_cellNum"/>
+        <br />
+        <br />
+        <label for="field_workNum">Work:</label>
+        <br />
+        <input type="text" id="field_workNum" name="sender_workNum"/>
+        <br />
+        <br />
+        <label for="field_email">Email:</label>
+        <br />
+        <input type="text" id="field_email" name="sender_email"/>
+        <br />
+        <br />
+        <label for="field_ timeToMeet">Preferred Time To Meet:</label>
+        <br />
+        <br />
+        <select name="time" id="time">                 
+          <option value="1:00">1:00</option>
+          <option value="2:00">2:00</option>
+          <option value="3:00">3:00</option>
+          <option value="4:00">4:00</option>
+          <option value="5:00">5:00</option>
+          <option value="6:00">6:00</option>
+          <option value="7:00">7:00</option>
+          <option value="8:00">8:00</option>
+          <option value="9:00">9:00</option>
+          <option value="10:00">10:00</option>
+          <option value="11:00">11:00</option>
+          <option value="12:00">12:00</option>
+        </select>
+                                                      <select name="AMorPM" id="AMorPM">
+                                                        <option value="am">AM</option>
+                                                        <option value="pm">PM</option>
+                                                      </select>
+                                                      <br />
+                                                      <br />
+        <label> How Did You Hear About Us? </label>
+        <br />
+        <br />
+        <input type="radio" name="formQuestion" value="wordOfMouth">Word Of Mouth</input>
+        <input type="radio" name="formQuestion" value="truck">I saw the truck</input>
+        <input type="radio" name="formQuestion" value="yellowPages">Yellow Pages</input>
+        <input type="radio" name="formQuestion" value="Other">Other</input>
+
+
+        <br />
+        <br />
+        <br />
+        <input type="button" value="submit"></input>
+      </form>
+
+    
+
+   	<!-- end #content --></div>
+
+  <!-- end #container --></div>
+
+
+ <div id="footer">
+    <img src="Images/fb-button.png" align="left" height="50px"  width="50px" alt="facebook button" /> 
+    <p> Email: allseasonsgc@gmail.com | Tel: 441-232-6716</p>
+  <!-- end #footer --></div>
+
+</body>
+</html>
